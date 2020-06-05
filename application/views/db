@@ -10,3 +10,13 @@ hits int(10) NOT NULL DEFAULT 0 COMMENT '조회수',
 reg_date datetime NOT NULL COMMENT '등록일',
 INDEX board_pid (board_pid)
 )
+
+유저
+CREATE TABLE users (
+id INT(10) NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50) NULL COMMENT '아이디',
+password VARCHAR(50) NULL COMMENT '비밀번호',
+name VARCHAR(50) NULL COMMENT '이름',
+email VARCHAR(50) NULL COMMENT '이메일',
+reg_date DATETIME NULL COMMENT '가입일'
+)

@@ -3,13 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class board_m extends CI_Model
 {
-	function __construct() {
+	function __construct()
+	{
 		parent::__construct();
-
 	}
 
-	function get_list($table = '', $type = '', $offset = '', $limit = '', $search_word = '') {
-
+	function get_list($table = '', $type = '', $offset = '', $limit = '', $search_word = '')
+	{
 		$sword = '';
 
 		if ($search_word != '') {
@@ -28,50 +28,39 @@ class board_m extends CI_Model
 		$query = $this -> db -> query($sql);
 
 		if ($type == 'count') {
-			$result = $query -> num_rows();
+			$result = $query->num_rows();
 		} else {
-			$result = $query -> result();
+			$result = $query->result();
 		}
 
 		return $result;
 	}
 
-	/**
-	 * 게시물 상세보기 가져오기
-	 *
-	 * @param string $table 게시판 테이블
-	 * @param string $id 게시물 번호
-	 * @return array
-	 */
-	function get_view($table, $id) {
+	/*** 게시물 상세보기 가져오기 ***/
+	function get_view($table, $id)
+	{
 		// 조횟수 증가
 		$sql0 = "UPDATE ci_board SET hits = hits + 1 WHERE board_id='" . $id . "'";
-		$this -> db -> query($sql0);
+		$this -> db->query($sql0);
 
 		$sql = "SELECT * FROM ci_board WHERE board_id = '" . $id . "'";
-		$query = $this -> db -> query($sql);
+		$query = $this->db->query($sql);
 
 		// 게시물 내용 반환
-		$result = $query -> row();
+		$result = $query->row();
 
 		return $result;
-
 	}
 
-	/**
-	 * 게시물 입력
-	 *
-	 * @param array $arrays 테이블 명, 게시물 제목, 게시물 내용 1차 배열
-	 * @return boolean 입력 성공여부
-	 */
-	function insert_board($arrays) {
+	/*** 게시물 입력 ***/
+	function insert_board($arrays)
+	{
 		$insert_array = array(
 			'board_pid' => 0,
-			'user_id' => 'advisor',
-			'user_name' => 'palpit',
-			'subject' => $arrays['subject'],
-			'contents' => $arrays['contents'],
-			'reg_date' => date("Y-m-d H:i:s")
+			'user_id' => $arrays['user_id'],
+			'user_name' => $arrays['user_name'],
+			'subject' => $arrays['subject'], 
+			'contents' => $arrays['contents']
 		);
 
 		$result = $this->db->insert($arrays['table'], $insert_array);
@@ -79,13 +68,9 @@ class board_m extends CI_Model
 		return $result;
 	}
 
-	/**
-	 * 게시물 수정
-	 *
-	 * @param array $arrays 테이블 명, 게시물 번호, 게시물 제목, 게시물 내용
-	 * @return boolean 성공 여부
-	 */
-	function modify_board($arrays) {
+	/*** 게시물 수정 ***/
+	function modify_board($arrays)
+	{
 		$modify_array = array(
 			'subject' => $arrays['subject'],
 			'contents' => $arrays['contents']
@@ -100,15 +85,9 @@ class board_m extends CI_Model
 		return $result;
 	}
 
-	/**
-	 * 게시물 삭제
-	 *
-	 * @param string $table 테이블 명
-	 * @param string $no 게시물 번호
-	 * @return boolean 성공 여부
-	 *
-	 */
-	function delete_content($table, $no) {
+	/*** 게시물 삭제 ***/
+	function delete_content($table, $no)
+	{
 		$delete_array = array(
 			'board_id' => $no
 		);

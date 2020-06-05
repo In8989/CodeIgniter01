@@ -12,7 +12,7 @@
 	});
 </script>
 
-<article id="board_area" style="padding-top: 30px;">
+<article style="padding-top: 30px;">
 	<button><a href="/board/write/<?php echo $this -> uri -> segment(3); ?>/page/<?php echo $this -> uri -> segment(7); ?>" style="text-decoration: none;"> 글쓰기</a></button>
 	<br><br>
 	<table cellpadding="10" cellspacing="2" align="center" width="100%" border="1">

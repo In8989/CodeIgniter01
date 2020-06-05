@@ -15,11 +15,11 @@
 		});
 	});
 </script>
-<article id="board_area">
+<article>
 	<header>
 		<h1></h1>
 	</header>
-	<form class="form-horizontal" method="post" action="" id="write_action">
+	<form method="post" action="" id="write_action">
 		<fieldset style="width: 50%; text-align: center;">
 			<legend>
 				게시물 쓰기
