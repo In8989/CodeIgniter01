@@ -10,6 +10,7 @@ class Board extends CI_Controller
 		$this->load->database();
 		$this->load->model('board_m');
 		$this->load->helper(array('url', 'date'));
+		$this->output->enable_profiler(true);
 	}
 
 	/*** 주소에서 메서드가 생략되었을 때 실행되는 기본 메서드 ***/
@@ -134,8 +135,6 @@ class Board extends CI_Controller
 	/*** 게시물 쓰기 ***/
 	function write()
 	{
-		echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
-
 		if ($_POST) {
 			// 글쓰기 POST 전송 시
 
@@ -183,8 +182,6 @@ class Board extends CI_Controller
 	/*** 게시물 수정 ***/
 	function modify()
 	{
-		echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-
 		if ( $_POST ) {
 			$this->load->helper('alert');
 
@@ -228,8 +225,6 @@ class Board extends CI_Controller
 	/*** 게시물 삭제 ***/
 	function delete()
 	{
-		echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-
 		$this->load->helper('alert');
 
 		$return = $this->board_m->delete_content($this->uri->segment(3), $this->uri->segment(5));

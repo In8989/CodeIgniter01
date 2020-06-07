@@ -39,18 +39,11 @@ class Member extends CI_Controller
 		$this->form_validation->set_rules('id', '아이디', 'callback_id_check');
 		$this->form_validation->set_rules('password', '비밀번호', 'required|matches[passconf]');
 		$this->form_validation->set_rules('passconf', '비밀번호 확인', 'required');
+		$this->form_validation->set_rules('name', '이름', 'required');
 		$this->form_validation->set_rules('email', '이메일', 'required|valid_email');
-		$this->form_validation->set_rules('sex', '라디오 버튼 값', '');
+		$this->form_validation->set_rules('gender', '라디오 버튼 값', '');
 
-/*		if ($this->form_validation->run() == FALSE) {
-
-			$this->load->view('member/join_v');
-		} else {
-			$this->load->view('member/joinOk_v');
-		}
-*/
-
-		if ($_POST) {
+		if ($this->form_validation->run()) {
 			$join_data = array(
 				'id'=>$this->input->post('id',TRUE),
 				'password'=>$this->input->post('password',TRUE),

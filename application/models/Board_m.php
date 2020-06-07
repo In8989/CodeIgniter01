@@ -21,11 +21,16 @@ class board_m extends CI_Model
 
 		if ($limit != '' OR $offset != '') {
 			// 페이징이 있을 경우 처리
-			$limit_query = ' LIMIT ' . $offset . ', ' . $limit;
+			$limit_query = ' LIMIT '.$offset.', '.$limit;
 		}
 
 		$sql = "SELECT * FROM ci_board ". $sword . " ORDER BY board_id DESC " . $limit_query;
+
 		$query = $this -> db -> query($sql);
+
+//		$this->db->get('ci_board','$offset','$limit');
+//		$query=$this->db->order_by('board_id','desc');
+
 
 		if ($type == 'count') {
 			$result = $query->num_rows();
@@ -39,12 +44,19 @@ class board_m extends CI_Model
 	/*** 게시물 상세보기 가져오기 ***/
 	function get_view($table, $id)
 	{
-		// 조횟수 증가
-		$sql0 = "UPDATE ci_board SET hits = hits + 1 WHERE board_id='" . $id . "'";
-		$this -> db->query($sql0);
 
-		$sql = "SELECT * FROM ci_board WHERE board_id = '" . $id . "'";
-		$query = $this->db->query($sql);
+		// 조횟수 증가
+//		$sql0 = "UPDATE ci_board SET hits = hits + 1 WHERE board_id='" . $id . "'";
+//		$this -> db->query($sql0);
+		$this->db->set('hits','hits+1',FALSE);
+		$this->db->where('board_id',$id);
+		$this->db->update('ci_board');
+
+
+//		$sql = "SELECT * FROM ci_board WHERE board_id = '" . $id . "'";
+//		$query = $this->db->query($sql);
+		$this->db->where('board_id',$id);
+		$query=$this->db->get('ci_board');
 
 		// 게시물 내용 반환
 		$result = $query->row();

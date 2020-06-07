@@ -15,7 +15,7 @@ class Member_m extends CI_Model
 			'id'=>$array['id'],
 			'password'=>$array['password'],
 			'name'=>$array['name'],
-			'email'=>$array['email'],
+			'email'=>$array['email']
 		);
 		$resutl=$this->db->insert($array['table'],$join_array);
 
@@ -25,9 +25,12 @@ class Member_m extends CI_Model
 	/***  로그인 세션 ***/
 	function member_login($login)
 	{
-		$sql = "SELECT * FROM users WHERE id='".$login['id']."' AND password='".$login['password']."'";
+//		$sql = "SELECT * FROM users WHERE id='".$login['id']."' AND password='".$login['password']."'";
 
-		$query=$this->db->query($sql);
+		$this->db->where('id',$login['id']);
+		$this->db->where('password',$login['password']);
+
+		$query=$this->db->get('users');
 
 		if($query->num_rows() > 0){
 			return $query->row();
