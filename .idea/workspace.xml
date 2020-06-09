@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="20-06-05 board push">
+    <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/config/rest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Jwt_token.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/libraries/Jwt_creator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeIgniter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeIgniter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Board.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Board_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Board_m.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Member_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Member_m.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/db" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/header_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/chriskacerguis/codeigniter-restserver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/mikey179/vfsstream" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1coEdo5Zna0KQsMLfj6Q4KPzY7S" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -35,16 +71,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/controllers/api" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\CodeIgniter\application\language" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\views\board" />
       <recent name="C:\workspace\CodeIgniter\application\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\language" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -82,7 +121,9 @@
       <workItem from="1591380929366" duration="644000" />
       <workItem from="1591449456480" duration="359000" />
       <workItem from="1591505128107" duration="4968000" />
-      <workItem from="1591534213896" duration="7186000" />
+      <workItem from="1591534213896" duration="7467000" />
+      <workItem from="1591626193712" duration="12000" />
+      <workItem from="1591703755480" duration="6887000" />
     </task>
     <task id="LOCAL-00001" summary="20-06-05 board push">
       <created>1591300010850</created>
@@ -91,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591300010850</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20-06-05 board push">
+      <created>1591543020752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591543020752</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,14 +167,14 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591287135506" />
-    <state x="254" y="230" key="CommitChangelistDialog2" timestamp="1591315171792">
+    <state x="254" y="230" key="CommitChangelistDialog2" timestamp="1591543020038">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591315171792" />
-    <state x="360" y="392" key="FileChooserDialogImpl" timestamp="1591380917151">
+    <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543020038" />
+    <state x="360" y="392" key="FileChooserDialogImpl" timestamp="1591707387813">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="360" y="392" key="FileChooserDialogImpl/0.0.2318.1265@0.0.2318.1265" timestamp="1591380917151" />
+    <state x="360" y="392" key="FileChooserDialogImpl/0.0.2318.1265@0.0.2318.1265" timestamp="1591707387813" />
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog" timestamp="1591285569793">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
@@ -135,18 +183,18 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="407" y="448" key="NewPhpClassDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591288078058" />
-    <state x="473" y="557" key="NewPhpFileDialog" timestamp="1591296755631">
+    <state x="473" y="557" key="NewPhpFileDialog" timestamp="1591705756680">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="473" y="557" key="NewPhpFileDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591296755631" />
+    <state x="473" y="557" key="NewPhpFileDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591705756680" />
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor" timestamp="1591542877028">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor/0.0.2318.1265@0.0.2318.1265" timestamp="1591542877028" />
-    <state x="233" y="370" key="Vcs.Push.Dialog.v2" timestamp="1591315248269">
+    <state x="233" y="370" key="Vcs.Push.Dialog.v2" timestamp="1591543116344">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591315248269" />
+    <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543116344" />
     <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591533356103">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
