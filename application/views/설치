@@ -1,0 +1,8 @@
+docker
+docker-compose up -d
+
+restserver
+composer require chriskacerguis/codeigniter-restserver
+
+jwt
+composer require firebase/php-jwt
