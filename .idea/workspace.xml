@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/config/rest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/Jwt_token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/libraries/Jwt_creator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CodeIgniter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeIgniter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/libraries/Auth_creator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/Book_m.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/rest.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/rest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Jwt_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Jwt_token.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +70,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/controllers/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/config" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\language" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
       <recent name="C:\workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\views\board" />
       <recent name="C:\workspace\CodeIgniter\application\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
-      <recent name="C:\workspace\CodeIgniter\application\language" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -124,6 +124,7 @@
       <workItem from="1591534213896" duration="7467000" />
       <workItem from="1591626193712" duration="12000" />
       <workItem from="1591703755480" duration="6887000" />
+      <workItem from="1591751251399" duration="21772000" />
     </task>
     <task id="LOCAL-00001" summary="20-06-05 board push">
       <created>1591300010850</created>
@@ -179,14 +180,16 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591285569793" />
-    <state x="407" y="448" key="NewPhpClassDialog" timestamp="1591288078058">
-      <screen x="0" y="0" width="2318" height="1265" />
+    <state x="1146" y="336" key="NewPhpClassDialog" timestamp="1591763768961">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="407" y="448" key="NewPhpClassDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591288078058" />
-    <state x="473" y="557" key="NewPhpFileDialog" timestamp="1591705756680">
-      <screen x="0" y="0" width="2318" height="1265" />
+    <state x="1146" y="336" key="NewPhpClassDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591763768961" />
+    <state x="392" y="458" key="NewPhpFileDialog" timestamp="1591751734593">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="473" y="557" key="NewPhpFileDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591705756680" />
+    <state x="392" y="458" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591751734593" />
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor" timestamp="1591542877028">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
@@ -199,5 +202,17 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591533356103" />
+    <state x="0" y="0" width="1254" height="1018" key="dock-window-1" timestamp="1591762812687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1254" height="1018" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591762812687" />
+    <state x="1920" y="0" width="950" height="1018" key="dock-window-2" timestamp="1591768650453">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="950" height="1018" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591768650453" />
+    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1591757898766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591757898766" />
   </component>
 </project>

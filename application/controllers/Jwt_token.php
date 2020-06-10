@@ -21,8 +21,9 @@ class Jwt_token extends CI_Controller
 
 	public function LoginToken()
 	{
-		$tokenData['uniqueId'] = '11';
-		$tokenData['role'] = 'alamgir';
+		$tokenData['user_id'] = '11';
+		$tokenData['nickname'] = 'alamgir';
+		$tokenData['nickname'] = 'alamgir';
 		$tokenData['timeStamp'] = Date('Y-m-d h:i:s');
 		$jwtToken = $this->objOfJwt->GenerateToken($tokenData);
 		echo json_encode(array('Token'=>$jwtToken));

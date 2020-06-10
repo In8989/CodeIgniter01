@@ -545,7 +545,7 @@ $config['rest_language'] = 'english';
 | will access it through a browser
 |
 */
-$config['check_cors'] = false;
+$config['check_cors'] = true;
 
 /*
 |--------------------------------------------------------------------------
@@ -561,6 +561,7 @@ $config['allowed_cors_headers'] = [
   'Content-Type',
   'Accept',
   'Access-Control-Request-Method',
+	'Token'
 ];
 
 /*
@@ -578,6 +579,7 @@ $config['allowed_cors_methods'] = [
   'PUT',
   'PATCH',
   'DELETE',
+
 ];
 
 /*
