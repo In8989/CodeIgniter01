@@ -168,10 +168,11 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591287135506" />
-    <state x="254" y="230" key="CommitChangelistDialog2" timestamp="1591543020038">
-      <screen x="0" y="0" width="2318" height="1265" />
+    <state x="961" y="111" key="CommitChangelistDialog2" timestamp="1591776360490">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543020038" />
+    <state x="961" y="111" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591776360490" />
     <state x="360" y="392" key="FileChooserDialogImpl" timestamp="1591707387813">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
@@ -194,10 +195,11 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor/0.0.2318.1265@0.0.2318.1265" timestamp="1591542877028" />
-    <state x="233" y="370" key="Vcs.Push.Dialog.v2" timestamp="1591543116344">
-      <screen x="0" y="0" width="2318" height="1265" />
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1591776372985">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543116344" />
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591776372985" />
     <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591533356103">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>

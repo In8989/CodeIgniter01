@@ -68,7 +68,7 @@ class Auth extends RestController
 				$data['reg_date'] = $user->reg_date;
 				$data['iat'] = $now;	//	현제시간
 				$data['exp'] = strtotime('+1 minutes');	// 1분 뒤 만료
-//				$data['expired'] = strtotime('+1 minutes');
+
 
 //				print_r($data); //배열보기
 
