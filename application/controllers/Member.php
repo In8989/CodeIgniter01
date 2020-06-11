@@ -64,8 +64,10 @@ class Member extends CI_Controller
 	{
 		if($id){
 			$result = array();
-			$sql = "select * from users where id='".$id."'";
-			$query=$this->db->query($sql);
+//			$sql = "select * from users where id='".$id."'";
+//			$query=$this->db->query($sql);
+			$this->db->where('id',$id);
+			$query = $this->db->get('users');
 			$result = $query->row();
 
 			if($result){

@@ -21,17 +21,6 @@ class Auth extends RestController
 	// GET
 	public function index_get()
 	{
-//		$received_Token = $this->input->request_headers('Authorization');
-//		try
-//		{
-//			$jwtData = $this->objOfJwt->DecodeToken($received_Token['Token']);
-//			echo json_encode($jwtData);
-//		}
-//		catch (Exception $e)
-//		{
-//			http_response_code('401');
-//			echo json_encode(array( "status" => false, "message" => $e->getMessage()));exit;
-//		}
 
 		$received_Token = $this->input->get_request_header('Token');
 
@@ -50,6 +39,14 @@ class Auth extends RestController
 	{
 		if ($type  == 'signin') {
 			// form 검증
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('id','id','trim|required|max_length[10]');
+			$this->form_validation->set_rules('pw','pw','trim|required|max_length[10]');
+			$this->form_validation->set_data($this->post());
+			if($this->form_validation->run() === FALSE){
+				$this->response("false", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());
+				return;
+			}
 
 			$id = $this->post('id');
 			$pw = $this->post('pw');
@@ -79,6 +76,12 @@ class Auth extends RestController
 			}
 
 		} else if ($type == 'signup') {
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('id','id','callback_id_check');
+			if($this->form_validation->run() === FALSE){
+				$this->response("중복된ID입니다.", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());
+				return;
+			}
 
 			$id = $this->post('id');
 			$pw = $this->post('pw');
@@ -92,11 +95,12 @@ class Auth extends RestController
 				'email' => $email
 			);
 
-			$this->db->insert('users',$data);
-
-			$this->response('true', 200);
-		} else {
-			$this->response('false', 404);
+			$insert_id = $this->db->insert('users',$data);
+			if($insert_id){
+				$this->response('회원가입 성공', 200);
+			}else{
+				$this->response('false', 404);
+			}
 		}
 	}
 
@@ -130,5 +134,26 @@ class Auth extends RestController
 		$this->db->delete('users');
 	}
 
+	// 중복검사
+	public function id_check($id)
+	{
+		if($id){
+			$result = array();
+//			$sql = "select * from users where id='".$id."'";
+//			$query=$this->db->query($sql);
+			$this->db->where('id',$id);
+			$query = $this->db->get('users');
+			$result = $query->row();
+
+			if($result){
+				$this->form_validation->set_message('id_check', $id.'은(는) 중복된 아이디 입니다.');
+				return FALSE;
+			}else {
+				return TRUE;
+			}
+		}else {
+			return FALSE;
+		}
+	}
 
 }

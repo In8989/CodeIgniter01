@@ -561,7 +561,7 @@ $config['allowed_cors_headers'] = [
   'Content-Type',
   'Accept',
   'Access-Control-Request-Method',
-	'Token'
+  'Token'
 ];
 
 /*
@@ -579,7 +579,6 @@ $config['allowed_cors_methods'] = [
   'PUT',
   'PATCH',
   'DELETE',
-
 ];
 
 /*
