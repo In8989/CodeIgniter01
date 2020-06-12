@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/api/Board.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/rest.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/rest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Member.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Jwt_token.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +69,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../masiljang-api-php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
-      <recent name="C:\workspace\CodeIgniter\application\language" />
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://kci3472.cafe24.com" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspace\CodeIgniter\application\config" />
@@ -83,6 +82,11 @@
       <recent name="C:\workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\views\board" />
       <recent name="C:\workspace\CodeIgniter\application\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\language" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -126,7 +130,8 @@
       <workItem from="1591751251399" duration="22576000" />
       <workItem from="1591833601127" duration="11602000" />
       <workItem from="1591854986391" duration="27000" />
-      <workItem from="1591855026041" duration="9336000" />
+      <workItem from="1591855026041" duration="10061000" />
+      <workItem from="1591920125549" duration="12290000" />
     </task>
     <task id="LOCAL-00001" summary="20-06-05 board push">
       <created>1591300010850</created>
@@ -156,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591776429660</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20-06-11 Auth post validation 조금">
+      <created>1591864945141</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591864945141</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,18 +190,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20-06-05 board push" />
     <MESSAGE value="20-06-10 api jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="20-06-10 api jwt" />
+    <MESSAGE value="20-06-11 Auth post validation 조금" />
+    <option name="LAST_COMMIT_MESSAGE" value="20-06-11 Auth post validation 조금" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591287135506">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591287135506" />
-    <state x="961" y="111" key="CommitChangelistDialog2" timestamp="1591776428849">
+    <state x="961" y="111" key="CommitChangelistDialog2" timestamp="1591864944028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543020038" />
-    <state x="961" y="111" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591776428849" />
+    <state x="961" y="111" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864944028" />
     <state x="298" y="322" key="FileChooserDialogImpl" timestamp="1591834071093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -204,20 +217,20 @@
     </state>
     <state x="407" y="448" key="NewPhpClassDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591288078058" />
     <state x="1146" y="336" key="NewPhpClassDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591763768961" />
-    <state x="392" y="458" key="NewPhpFileDialog" timestamp="1591751734593">
+    <state x="392" y="458" key="NewPhpFileDialog" timestamp="1591924236456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="473" y="557" key="NewPhpFileDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591705756680" />
-    <state x="392" y="458" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591751734593" />
+    <state x="392" y="458" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591924236456" />
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor" timestamp="1591542877028">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor/0.0.2318.1265@0.0.2318.1265" timestamp="1591542877028" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1591776436021">
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1591864950318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543116344" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591776436021" />
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864950318" />
     <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591533356103">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
@@ -230,9 +243,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="0" width="950" height="1018" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591768650453" />
-    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1591757898766">
+    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1591924902944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591757898766" />
+    <state x="960" y="229" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591924902944" />
   </component>
 </project>

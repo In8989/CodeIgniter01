@@ -16,6 +16,7 @@ class Auth extends RestController
 		$this->load->database();
 		$this->objOfJwt = new Jwt_creator();
 		$this->jwt_auth = new Auth_creator();
+//		$this->output->enable_profiler(true);
 	}
 
 	// GET
@@ -41,7 +42,8 @@ class Auth extends RestController
 			// form 검증
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('id','id','trim|required|max_length[10]');
-			$this->form_validation->set_rules('pw','pw','trim|required|max_length[10]');
+			$this->form_validation->set_rules('pw','pw','
+			 trim|required|max_length[10]');
 			$this->form_validation->set_data($this->post());
 			if($this->form_validation->run() === FALSE){
 				$this->response("false", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());

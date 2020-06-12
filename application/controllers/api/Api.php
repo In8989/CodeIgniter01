@@ -79,13 +79,9 @@ class Api extends RestController
 			$result = $this->book_m->add(array("name"=>$name, "price"=>$price, "author"=>$author, "category"=>$category, "language"=>$language, "isbn"=>$isbn, "publish_date"=>$pub_date));
 
 			if($result === 0){
-
 				$this->response("Book information coild not be saved. Try again.", 404);
-
 			}else{
-
 				$this->response("success", 200);
-
 			}
 
 		}
