@@ -43,13 +43,13 @@ class Board extends RestController
 			if ($result) {
 				$this->response($result, 200);
 			} else {
-				$this->response('No record found', 404);
+				$this->response(false, 404);
 			}
 		}else if ($type == 'view'){
 			$board_id = $this->uri->segment(4);
 			$this->db->where('board_id',$board_id);
 			$get_view = $this->db->get('ci_board');
-			$get_view->num_rows();
+//			$get_view->num_rows();
 			$result = $get_view->row();
 			print_r($result);
 
@@ -61,7 +61,7 @@ class Board extends RestController
 	{
 		if($type == 'write') {
 			if(!$this->is_auth){
-				echo '로그인하세요';
+				$this->response(false,404);
 			}else {
 
 				$user_id = $this->post('user_id');
@@ -76,9 +76,9 @@ class Board extends RestController
 
 				$insert_board = $this->db->insert('ci_board', $data);
 				if ($insert_board) {
-					$this->response('게시글작성완료', 200);
+					$this->response(true, 200);
 				} else {
-					$this->response('작성실패', 404);
+					$this->response(false, 404);
 				}
 			}
 		}
@@ -87,10 +87,22 @@ class Board extends RestController
 
 	public function index_put()
 	{
-		if(!$this->is_auth){
-			echo '로그인해요';
-		}else{
+		$board_id = $this->uri->segment(3);
+		$this->db->where('board_id',$board_id);
+		$get_view = $this->db->get('ci_board');
+		$get_view->num_rows();
+		$result = $get_view->row();
+		// 게시글 id 찾기
+//		print_r($result->user_id);
 
+		// 로그인 한 id 찾기
+		$login_token = json_decode($this->is_auth);
+//		print_r($login_token->id);
+
+		if(!$login_token->id == $result->user_id){
+			echo '아이디가 다르다';
+			$this->response(false,404);
+		}else{
 			$data['board_id'] = $this->uri->segment(3);
 			$data['subject'] = $this->put('subject');
 			$data['contents'] = $this->put('contents');
@@ -98,9 +110,9 @@ class Board extends RestController
 			if($data) {
 				$this->db->where('board_id', $data['board_id']);
 				$this->db->update('ci_board', $data);
-				echo '게시글이 수정되었습니다.';
+				$this->response($data,200);
 			}else{
-				echo 'data:false';
+				$this->response(false,404);
 			}
 		}
 	}

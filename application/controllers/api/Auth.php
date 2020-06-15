@@ -42,8 +42,7 @@ class Auth extends RestController
 			// form 검증
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('id','id','trim|required|max_length[10]');
-			$this->form_validation->set_rules('pw','pw','
-			 trim|required|max_length[10]');
+			$this->form_validation->set_rules('pw','pw','trim|required|max_length[10]');
 			$this->form_validation->set_data($this->post());
 			if($this->form_validation->run() === FALSE){
 				$this->response("false", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());
@@ -66,7 +65,7 @@ class Auth extends RestController
 				$data['email'] = $user->email;
 				$data['reg_date'] = $user->reg_date;
 				$data['iat'] = $now;	//	현제시간
-				$data['exp'] = strtotime('+1 minutes');	// 1분 뒤 만료
+				$data['exp'] = strtotime('+1 hour');	// 1분 뒤 만료
 
 
 //				print_r($data); //배열보기
@@ -99,9 +98,9 @@ class Auth extends RestController
 
 			$insert_id = $this->db->insert('users',$data);
 			if($insert_id){
-				$this->response('회원가입 성공', 200);
+				$this->response(true, 200);
 			}else{
-				$this->response('false', 404);
+				$this->response(false, 404);
 			}
 		}
 	}

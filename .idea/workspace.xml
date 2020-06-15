@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/api/Board.php" afterDir="false" />
+    <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="20-06-15 board api token비교 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Jwt_token.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/application/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/cache/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/doctypes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/doctypes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/foreign_chars.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/foreign_chars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/memcached.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/memcached.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/migration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/migration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/mimes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/mimes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/profiler.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/profiler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/smileys.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/smileys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/user_agents.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/user_agents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Board.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/api/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/api/Board.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Board.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/alert_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/alert_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/hooks/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/hooks/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/english/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/english/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/calendar_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/calendar_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/date_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/date_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/db_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/db_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/email_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/email_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/form_validation_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/form_validation_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/ftp_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/ftp_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/imglib_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/imglib_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/migration_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/migration_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/number_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/number_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/pagination_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/pagination_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/profiler_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/profiler_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/unit_test_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/unit_test_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/korean/upload_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/upload_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/Jwt_creator.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/Jwt_creator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Board_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Board_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Member_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Member_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/third_party/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/third_party/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/board/list_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/board/list_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/board/modify_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/board/modify_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/board/view_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/board/view_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/board/write_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/board/write_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/db" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_404.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/error_404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/error_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/error_exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_general.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/error_general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_php.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/error_php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/cli/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_404.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/error_404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/error_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/error_exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_general.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/error_general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_php.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/error_php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/errors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/footer_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/footer_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/header_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/index_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/member/joinOk_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/member/joinOk_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/member/join_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/member/join_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/member/login_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/member/login_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/설치" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/설치" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +91,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -131,7 +201,9 @@
       <workItem from="1591833601127" duration="11602000" />
       <workItem from="1591854986391" duration="27000" />
       <workItem from="1591855026041" duration="10061000" />
-      <workItem from="1591920125549" duration="12290000" />
+      <workItem from="1591920125549" duration="12366000" />
+      <workItem from="1591935906322" duration="2105000" />
+      <workItem from="1592178764847" duration="11687000" />
     </task>
     <task id="LOCAL-00001" summary="20-06-05 board push">
       <created>1591300010850</created>
@@ -168,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591864945141</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20-06-12 board api 작업중">
+      <created>1591932840738</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591932840739</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,27 +270,33 @@
     <MESSAGE value="20-06-05 board push" />
     <MESSAGE value="20-06-10 api jwt" />
     <MESSAGE value="20-06-11 Auth post validation 조금" />
-    <option name="LAST_COMMIT_MESSAGE" value="20-06-11 Auth post validation 조금" />
+    <MESSAGE value="20-06-12 board api 작업중" />
+    <MESSAGE value="20-06-15 board api token비교 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="20-06-15 board api token비교 완료" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591287135506">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591287135506" />
-    <state x="961" y="111" key="CommitChangelistDialog2" timestamp="1591864944028">
+    <state x="705" y="125" key="CommitChangelistDialog2" timestamp="1592194713791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543020038" />
-    <state x="961" y="111" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864944028" />
-    <state x="298" y="322" key="FileChooserDialogImpl" timestamp="1591834071093">
+    <state x="705" y="125" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592194713791" />
+    <state x="298" y="322" key="FileChooserDialogImpl" timestamp="1592186082922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="360" y="392" key="FileChooserDialogImpl/0.0.2318.1265@0.0.2318.1265" timestamp="1591707387813" />
-    <state x="298" y="322" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591834071093" />
+    <state x="298" y="322" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592186082922" />
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog" timestamp="1591285569793">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591285569793" />
+    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1592179156644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="236" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592179156644" />
     <state x="1146" y="336" key="NewPhpClassDialog" timestamp="1591763768961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -226,15 +311,16 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor/0.0.2318.1265@0.0.2318.1265" timestamp="1591542877028" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1591864950318">
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1591932843262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543116344" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864950318" />
-    <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591533356103">
-      <screen x="0" y="0" width="2318" height="1265" />
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591932843262" />
+    <state x="380" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592179406884">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591533356103" />
+    <state x="380" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592179406884" />
     <state x="0" y="0" width="1254" height="1018" key="dock-window-1" timestamp="1591762812687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
