@@ -45,7 +45,7 @@ class Auth extends RestController
 			$this->form_validation->set_rules('pw','pw','trim|required|max_length[10]');
 			$this->form_validation->set_data($this->post());
 			if($this->form_validation->run() === FALSE){
-				$this->response("false", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());
+				$this->response($this->form_validation->error_array(), RestController::HTTP_OK, FALSE);
 				return;
 			}
 
@@ -78,21 +78,25 @@ class Auth extends RestController
 
 		} else if ($type == 'signup') {
 			$this->load->library('form_validation');
-			$this->form_validation->set_rules('id','id','callback_id_check');
+			$this->form_validation->set_rules('user_id','user_id','trim|required|max_length[20]|alpha_numeric');
+			$this->form_validation->set_rules('user_pw','user_pw','trim|required|min_length[4]');
+			$this->form_validation->set_rules('user_name','user_name','trim|required|max_length[20]|korean_alpha_dash');
+			$this->form_validation->set_rules('email','email','trim|required|valid_email');
+			$this->form_validation->set_data($this->post());
 			if($this->form_validation->run() === FALSE){
-				$this->response("중복된ID입니다.", RestController::HTTP_OK, FALSE, validation_errors(), $this->form_validation->error_array());
+				$this->response($this->form_validation->error_array(), RestController::HTTP_OK, FALSE);
 				return;
 			}
 
-			$id = $this->post('id');
-			$pw = $this->post('pw');
-			$name = $this->post('name');
+			$user_id = $this->post('user_id');
+			$user_pw = $this->post('user_pw');
+			$user_name = $this->post('user_name');
 			$email = $this->post('email');
 
 			$data = array(
-				'id' => $id,
-				'password' => $pw,
-				'name' => $name,
+				'user_id' => $user_id,
+				'user_pw' => $user_pw,
+				'user_name' => $user_name,
 				'email' => $email
 			);
 
@@ -108,22 +112,28 @@ class Auth extends RestController
 
 	public function index_put()
 	{
-		$uid = $this->put('uid');
-		$id = $this->put('id');
-		$pw = $this->put('pw');
-		$name = $this->put('name');
-		$email = $this->put('email');
+//		$this->load->library('form_validation');
+//		$this->form_validation->set_rules('user_pw','user_pw','trim|required|min_length[3]');
+//		$this->form_validation->set_rules('user_name','user_name','trim|max_length[20]|korean_alpha_dash');
+//		$this->form_validation->set_rules('email','email','trim|valid_email');
+//		$this->form_validation->set_data($this->put());
+//
+//		if($this->form_validation->run() === FALSE){
+//			$this->response($this->form_validation->error_array(), RestController::HTTP_OK, FALSE);
+//			return;
+//		}
 
-		$data=array(
-			'id'=>$id,
-			'password'=>$pw,
-			'name'=>$name,
-			'email'=>$email
-		);
-		if(!$data|!$uid) {
-			$this->db->where('uid', $uid);
+		$data = [];
+//		$data['user_id'] = $user_id;
+		$data['user_name'] = $this->put('user_name');
+		$data['user_pw'] = $this->put('user_pw');
+		$data['email'] = $this->put('email');
+
+		if($data) {
+			$this->db->where('user_id', 1111);
 			$this->db->update('users', $data);
 		}
+
 
 	}
 
@@ -133,28 +143,6 @@ class Auth extends RestController
 
 		$this->db->where('id', $id);
 		$this->db->delete('users');
-	}
-
-	// 중복검사
-	public function id_check($id)
-	{
-		if($id){
-			$result = array();
-//			$sql = "select * from users where id='".$id."'";
-//			$query=$this->db->query($sql);
-			$this->db->where('id',$id);
-			$query = $this->db->get('users');
-			$result = $query->row();
-
-			if($result){
-				$this->form_validation->set_message('id_check', $id.'은(는) 중복된 아이디 입니다.');
-				return FALSE;
-			}else {
-				return TRUE;
-			}
-		}else {
-			return FALSE;
-		}
 	}
 
 }
