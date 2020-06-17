@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26d6f899-64aa-496c-be2c-a351da09b36a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/libraries/MY_Form_validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeIgniter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeIgniter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/api/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/api/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/language/korean/form_validation_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/korean/form_validation_lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/db" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/Auth_creator.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/Auth_creator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/MY_Form_validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/MY_Form_validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/header_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +71,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
       <recent name="http://kci3472.cafe24.com" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspace\CodeIgniter\application\controllers\api" />
-      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
-      <recent name="C:\workspace\CodeIgniter\application\language" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace\test\CodeIgniter\application\libraries" />
       <recent name="D:\Workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
       <recent name="C:\workspace\CodeIgniter\application\config" />
       <recent name="C:\workspace\CodeIgniter\application\views\board" />
+      <recent name="C:\workspace\CodeIgniter\application\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\controllers\api" />
+      <recent name="C:\workspace\CodeIgniter\application\language" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -131,14 +133,10 @@
       <workItem from="1591833601127" duration="11602000" />
       <workItem from="1591854986391" duration="27000" />
       <workItem from="1591855026041" duration="10061000" />
-      <workItem from="1591920125549" duration="12366000" />
-      <workItem from="1591935906322" duration="2105000" />
-      <workItem from="1592178764847" duration="11687000" />
-      <workItem from="1592194750511" duration="95000" />
-      <workItem from="1592194928255" duration="10000" />
-      <workItem from="1592195188458" duration="1735000" />
-      <workItem from="1592292938942" duration="156000" />
-      <workItem from="1592380769564" duration="3836000" />
+      <workItem from="1591920125549" duration="12290000" />
+      <workItem from="1592039955535" duration="2514000" />
+      <workItem from="1592137774587" duration="9984000" />
+      <workItem from="1592404446944" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="20-06-05 board push">
       <created>1591300010850</created>
@@ -175,21 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591864945141</updated>
     </task>
-    <task id="LOCAL-00006" summary="20-06-12 board api 작업중">
-      <created>1591932840738</created>
+    <task id="LOCAL-00006" summary="20-06-15 api board token값 있을 때 기능하게">
+      <created>1592148293028</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1591932840739</updated>
+      <updated>1592148293028</updated>
     </task>
-    <task id="LOCAL-00007" summary="20-06-15 board api token비교 완료">
-      <created>1592194798158</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1592194798159</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,35 +203,32 @@
     <MESSAGE value="20-06-05 board push" />
     <MESSAGE value="20-06-10 api jwt" />
     <MESSAGE value="20-06-11 Auth post validation 조금" />
-    <MESSAGE value="20-06-12 board api 작업중" />
-    <MESSAGE value="20-06-15 board api token비교 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="20-06-15 board api token비교 완료" />
+    <MESSAGE value="20-06-15 api board token값 있을 때 기능하게" />
+    <option name="LAST_COMMIT_MESSAGE" value="20-06-15 api board token값 있을 때 기능하게" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="310" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592380889319">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591287135506">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="374" y="195" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591287135506" />
-    <state x="310" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592380889319" />
-    <state x="705" y="125" key="CommitChangelistDialog2" timestamp="1592194797009">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="254" y="230" key="CommitChangelistDialog2" timestamp="1592148292386">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543020038" />
-    <state x="705" y="125" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592194797009" />
-    <state x="298" y="322" key="FileChooserDialogImpl" timestamp="1592381901125">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="254" y="230" key="CommitChangelistDialog2/0.0.2318.1265@0.0.2318.1265" timestamp="1592148292386" />
+    <state x="961" y="111" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864944028" />
+    <state x="360" y="392" key="FileChooserDialogImpl" timestamp="1592144355729">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="360" y="392" key="FileChooserDialogImpl/0.0.2318.1265@0.0.2318.1265" timestamp="1591707387813" />
-    <state x="298" y="322" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592381901125" />
-    <state x="2218" y="322" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1592293012350" />
+    <state x="360" y="392" key="FileChooserDialogImpl/0.0.2318.1265@0.0.2318.1265" timestamp="1592144355729" />
+    <state x="298" y="322" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591834071093" />
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog" timestamp="1591285569793">
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="512" y="524" width="259" height="216" key="Github.ShareDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1591285569793" />
-    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1592179156644">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="306" y="353" key="MultipleFileMergeDialog" timestamp="1592404459242">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="672" y="236" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592179156644" />
+    <state x="306" y="353" key="MultipleFileMergeDialog/0.0.2318.1265@0.0.2318.1265" timestamp="1592404459242" />
     <state x="1146" y="336" key="NewPhpClassDialog" timestamp="1591763768961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -255,28 +243,24 @@
       <screen x="0" y="0" width="2318" height="1265" />
     </state>
     <state x="142" y="254" width="1429" height="883" key="SettingsEditor/0.0.2318.1265@0.0.2318.1265" timestamp="1591542877028" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2" timestamp="1592194803076">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="233" y="370" key="Vcs.Push.Dialog.v2" timestamp="1592148295236">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591543116344" />
-    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592194803076" />
-    <state x="380" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592382339252">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="233" y="370" key="Vcs.Push.Dialog.v2/0.0.2318.1265@0.0.2318.1265" timestamp="1592148295236" />
+    <state x="193" y="304" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591864950318" />
+    <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592404635047">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
-    <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2318.1265@0.0.2318.1265" timestamp="1591533356103" />
-    <state x="380" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592382339252" />
-    <state x="0" y="0" width="1254" height="1018" key="dock-window-1" timestamp="1591762812687">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="459" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2318.1265@0.0.2318.1265" timestamp="1592404635047" />
+    <state x="856" y="0" width="949" height="1272" key="dock-window-1" timestamp="1592141002330">
+      <screen x="0" y="0" width="2318" height="1265" />
     </state>
+    <state x="856" y="0" width="949" height="1272" key="dock-window-1/0.0.2318.1265@0.0.2318.1265" timestamp="1592141002330" />
     <state x="0" y="0" width="1254" height="1018" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591762812687" />
     <state x="1920" y="0" width="950" height="1018" key="dock-window-2" timestamp="1591768650453">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="0" width="950" height="1018" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591768650453" />
-    <state x="743" y="251" width="613" height="538" key="find.popup" timestamp="1592382337408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="251" width="613" height="538" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592382337408" />
     <state x="960" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1591924902944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
