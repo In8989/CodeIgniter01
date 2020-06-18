@@ -17,8 +17,6 @@ class Board extends RestController
 		$this->load->library('form_validation');
 		$received_Token = $this->input->get_request_header('Token');
 		$this->is_auth = $this->jwt_auth->auth_get($received_Token);
-//		print_r($this->is_auth);
-
 //		$this->output->enable_profiler(true);
 	}
 
